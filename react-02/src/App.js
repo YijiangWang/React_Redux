@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Person from './person';
 
 class App extends Component{
   componentDidMount(){
@@ -7,7 +8,10 @@ class App extends Component{
 
   render(){
     return (
-      <div>Hello YijiangWang, HaHaHa...</div>
+      <div>
+        <h2>Hello YijiangWang, HaHaHa...</h2>
+        <Person />
+      </div>
     )
   }
 }
