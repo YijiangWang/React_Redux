@@ -11,7 +11,7 @@ class Person extends Component {
   }
 
   inputChange = () => {
-    this.setState({currentValue: this.yjwInput.value});
+    this.setState({currentValue: this.refs.yjwInput.value});
   }
   addList = () => {
     if (!this.state.currentValue) return;
@@ -39,7 +39,7 @@ class Person extends Component {
       <Fragment>
         <div>
           <label htmlFor="hobbyInput">爱好：</label>
-          <input type="text" ref={input=>this.yjwInput=input} id='hobbyInput' onChange={this.inputChange} value={currentValue} />
+          <input type="text" ref='yjwInput' id='hobbyInput' onChange={this.inputChange} value={currentValue} />
           <button onClick={this.addList}>增加</button>
         </div>
         {yjs}

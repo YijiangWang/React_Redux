@@ -6,8 +6,8 @@ class Yijiang extends Component {
     this.state = {  }
   }
   shouldComponentUpdate(nextProps, nextState){
-    console.log('next ---> ',nextProps.value,this.props.value)
     if(nextProps.value !== this.props.value){
+      console.log('next ---> ',nextProps.value,this.props.value)
       return true;
     }
     return false;
