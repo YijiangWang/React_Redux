@@ -5,11 +5,18 @@ class Yijiang extends Component {
     super(props);
     this.state = {  }
   }
+  shouldComponentUpdate(nextProps, nextState){
+    console.log('next ---> ',nextProps.value,this.props.value)
+    if(nextProps.value !== this.props.value){
+      return true;
+    }
+    return false;
+  }
   render() { 
-    const {value} = this.props;
+    const {value, del, index} = this.props;
     return ( 
-      <div>
-        {value}
+      <div onClick={()=>{del(index)}}>
+        我今天要 ----- {value}
       </div>
     );
   }
