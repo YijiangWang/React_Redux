@@ -1,7 +1,7 @@
 const defaultState = {
   list: [
     '周末我要学习',
-    '我要打篮球'
+    '我要打篮球。。。'
   ]
 }
 
