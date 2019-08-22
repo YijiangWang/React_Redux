@@ -21,4 +21,4 @@
 #### 5、antd 的使用
 - 首先进行安装： `npm i antd --save`;
 - 引入样式：`import 'antd/dist/antd.css';`；
-- 根据需要使用的组件从 antd 中引入：`import {Button, List} from 'antd'`
+- 根据需要使用的组件从 antd 中引入：`import {Button, Input, List} from 'antd';`。
