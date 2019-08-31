@@ -1,4 +1,5 @@
 const defaultState = {
+  defaultValue: '周末干点啥。。。',
   list: [
     '周末我要学习',
     '我要打篮球。。。'
@@ -6,5 +7,14 @@ const defaultState = {
 }
 
 export default (state = defaultState, action) => {
-  return state;
+  console.log('reducer -----> ', action)
+  switch(action.type){
+    case 'ADD_EVENT' : {
+      const tempState = {...state};
+      tempState.defaultValue = action.value;
+      return tempState;
+    }
+    default: 
+      return state;
+  }
 }

@@ -38,3 +38,5 @@ const store = createStore(reducer,
 export default store;
 ```
 - 其中，`window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()` 与 `window.devToolsExtension ? window.devToolsExtension() : () => { }` 都可以，选择一个即可。
+
+## action 的使用
